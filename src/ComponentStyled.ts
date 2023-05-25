@@ -180,5 +180,5 @@ export const OptionBadge = styled("button", {
 export const RemoveButton = styled("span", {
   fontSize: "1.2em",
   color: "#777",
-  marginTop: "-0.12em",
+  marginTop: "0.1em",
 });
