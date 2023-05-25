@@ -11,6 +11,8 @@ const options = [
 function App() {
   const [value1, setValue1] = useState<SelectOption[]>([options[0]]);
   const [value2, setValue2] = useState<SelectOption | undefined>(options[0]);
+  const [value3, setValue3] = useState<SelectOption[]>([options[0]]);
+  const [value4, setValue4] = useState<SelectOption | undefined>(options[0]);
   return (
     <div style={{ display: "flex", height: "100vh", width: "100vw" }}>
       <div
@@ -53,16 +55,16 @@ function App() {
         <Select
           variant="white"
           options={options}
-          value={value2}
-          onChange={(o) => setValue2(o)}
+          value={value4}
+          onChange={(o) => setValue4(o)}
         />
         <br />
         <Select
           variant="white"
           multiple
           options={options}
-          value={value1}
-          onChange={(o) => setValue1(o)}
+          value={value3}
+          onChange={(o) => setValue3(o)}
         />
       </div>
     </div>
